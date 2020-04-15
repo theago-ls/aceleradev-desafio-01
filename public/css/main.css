@@ -1,0 +1,321 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+  font-family: Montserrat;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url("../img/capa-trumanshow.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  height: 90vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  max-width: 960px;
+}
+
+header .navbar nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar nav ul li {
+  margin: 0 25px;
+}
+
+header .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .profile img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.conteudo {
+  max-width: 960px;
+}
+
+#titulo {
+  font-size: 6.5em;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+header a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+header p {
+  color: white;
+  font-size: 1.4em;
+  margin: 14px 0px;
+}
+
+#nomeUsuario {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.info {
+  margin-right: 15px;
+  font-weight: 100;
+}
+
+.infos {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.detalhes {
+  padding: 20px 0;
+}
+
+.detalhes p {
+  margin: 14px 0;
+}
+
+#botao {
+  display: inline-block;
+  background-color: #e4bb23;
+  padding: 15px 50px;
+  color: black;
+  font-size: 1.5em;
+  font-weight: 100;
+  border-radius: 40px;
+}
+
+#botao:hover {
+  background-color: #bc9a1d;
+}
+
+#data,
+a:hover:not(#botao) {
+  color: #bc9a1d;
+}
+
+a,
+.iconImgCard {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.imgCard,
+.overlayContainer {
+  transition: all 0.2s ease-in-out;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+section nav {
+  border-bottom: 1px solid rgba(210, 210, 210, 0.8);
+  display: flex;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+}
+
+section nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section nav ul li {
+  display: inline-block;
+  padding: 25px 0;
+  margin: 0 20px;
+  color: #e4bb23;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+section nav ul li:hover {
+  border-color: #e4bb23;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  max-width: 960px;
+  margin: 20px 0;
+}
+
+.card {
+  margin: 10px 5px;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card figure {
+  padding: 0;
+  margin: 0;
+}
+
+.imgCard {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 222px;
+  height: 345px;
+}
+
+.imgCard img {
+  width: 100%;
+}
+
+.overlayContainer {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 95%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.overlayContainer:hover {
+  opacity: 1;
+}
+
+.imgCard .overlayContainer div {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconImgCard {
+  color: #fff;
+  font-size: 5em;
+}
+
+.iconImgCard:hover {
+  color: #e4bb23;
+}
+
+.titleImgCard {
+  color: #e4bb23;
+  font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;d	
+}
+
+.cardInfos {
+  padding: 10px;
+}
+
+.tituloCard {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.generoCard {
+  color: #e4bb23;
+  font-size: 1.2em;
+}
+
+.generoCard:hover {
+  text-decoration-line: underline;
+}
+
+.footerCard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.likeIcon {
+  color: #bbb;
+}
+
+.likeIcon:hover {
+  color: #ff0400;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.socialIcons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.socialIcon {
+  font-size: 2.5em;
+	color: grey;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.fa-facebook:hover {
+	color: #3B5998;
+}
+
+.fa-twitter:hover {
+	color: #00ACEE;
+}
